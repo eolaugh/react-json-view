@@ -51,6 +51,7 @@ class VariableEditor extends React.PureComponent {
             namespace,
             indentWidth,
             enableClipboard,
+            disableArrayIndicies,
             onEdit,
             onDelete,
             onSelect,
@@ -58,7 +59,6 @@ class VariableEditor extends React.PureComponent {
         } = this.props;
         const { editMode } = this.state;
 
-        const disableArrayIndicies = true
 
 
         return (
@@ -71,7 +71,6 @@ class VariableEditor extends React.PureComponent {
             >
                 {type == 'array' && disableArrayIndicies? (
                     <span>
-     
                     </span>
                 ) : (
                     <span>

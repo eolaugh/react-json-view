@@ -94,6 +94,14 @@ export interface ReactJsonViewProps {
    *
    * Default: false
    */
+
+  disableArrayIndicies?: boolean;
+  /**
+   * Whether or not the indicies/indexes for an array should be disable when JSON is displayed. 
+   * 
+   *
+   * Default: false
+   */
   onEdit?: ((edit: InteractionProps) => false | any) | false;
   /**
    * When a callback function is passed in, add functionality is enabled.
