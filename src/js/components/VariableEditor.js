@@ -58,6 +58,9 @@ class VariableEditor extends React.PureComponent {
         } = this.props;
         const { editMode } = this.state;
 
+        const disableArrayIndicies = true
+
+
         return (
             <div
                 {...Theme(theme, 'objectKeyVal', {
@@ -66,13 +69,9 @@ class VariableEditor extends React.PureComponent {
                 class="variable-row"
                 key={variable.name}
             >
-                {type == 'array' ? (
-                    <span
-                        {...Theme(theme, 'array-key')}
-                        key={variable.name + '_' + namespace}
-                    >
-                        {variable.name}
-                        <div {...Theme(theme, 'colon')}>:</div>
+                {type == 'array' && disableArrayIndicies? (
+                    <span>
+     
                     </span>
                 ) : (
                     <span>

@@ -27,6 +27,7 @@ export default class extends React.PureComponent {
         onDelete: true,
         displayObjectSize: true,
         enableClipboard: true,
+        disableArrayIndicies: true,
         indentWidth: 4,
         displayDataTypes: true,
         iconStyle: "triangle"
@@ -40,6 +41,7 @@ export default class extends React.PureComponent {
             onDelete,
             displayObjectSize,
             enableClipboard,
+            disableArrayIndicies,
             theme,
             iconStyle,
             collapsed,
@@ -107,6 +109,7 @@ export default class extends React.PureComponent {
                     }
                     displayObjectSize={displayObjectSize}
                     enableClipboard={enableClipboard}
+                    disableArrayIndicies={disableArrayIndicies}
                     indentWidth={indentWidth}
                     displayDataTypes={displayDataTypes}
                     iconStyle={iconStyle}
